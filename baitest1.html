@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test1</title>
+</head>
+<body>
+<h3>Tuổi em</h3><input id="tuoiem" type="text">
+<button onclick="ketqua()">Kết quả</button>
+<h1 id="tuoi"></h1>
+<h1 id="tuoi1"></h1>
+</body>
+<script>
+    function ketqua() {
+        let a = +document.getElementById('tuoiem').value;
+        let anh = +a + 3;
+        let bo = +anh * 6;
+        document.getElementById('tuoi').innerHTML = 'Tuổi anh là: ' + anh;
+        document.getElementById('tuoi1').innerHTML = 'Tuổi bố là: ' + bo;
+    }
+</script>
+</html>
